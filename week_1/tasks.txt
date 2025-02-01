@@ -17,4 +17,3 @@ Issue 1.1 – Functions: Advanced argument usage
 name – позиционный, role – keyword-only.
 Проверь, что вызов create_user("Alice", role="admin") валиден, а
 create_user(name="Alice") – нет.
-Issue
