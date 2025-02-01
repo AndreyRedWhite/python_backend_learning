@@ -1,0 +1,20 @@
+Issue 1.1 – Functions: Advanced argument usage
+
+Задание A: Фильтр с гибкими критериями
+Есть список словарей devices = [{'hostname': 'R1', 'ip': '10.1.1.1'}, ...] .
+Напиши функцию filter_devices(devices, **kwargs) , которая возвращает только те
+словари, где все критерии совпадают.
+Пример: filter_devices(devices, hostname='R1', ip='10.1.1.1') → фильтрует по
+обоим параметрам.
+
+Задание B: Сумматор с разными способами вызова
+Функция multi_sum(*numbers, power=1) :
+Если power=2 , сначала возводит аргументы в квадрат, затем суммирует.
+Пример: multi_sum(1,2,3, power=2) → 14.
+
+Задание C: Keyword-only и Positional-only
+Функция create_user(name, /, *, role="guest") :
+name – позиционный, role – keyword-only.
+Проверь, что вызов create_user("Alice", role="admin") валиден, а
+create_user(name="Alice") – нет.
+Issue
