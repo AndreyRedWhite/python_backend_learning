@@ -14,7 +14,7 @@ def create_username(name: str, /, *, role: str = 'guest') -> str:
 if __name__ == '__main__':
     try:
         print(create_username('Alice', role='admin'))
-        print(create_username('John', 'admin'))
+        print(create_username('John', 'admin')) # tris is wrong request
     except TypeError as e:
         print(f'error: {e}.\nYou should type role as key argument only')
 
